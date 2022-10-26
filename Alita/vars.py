@@ -10,7 +10,7 @@ class Config:
     """Config class for variables."""
 
     LOGGER = True
-    BOT_TOKEN = config("BOT_TOKEN", default=2034149452:AAE_TDxppP1SIvTY2NxQO0UvJ9AYbpimR_4)
+    BOT_TOKEN = config("BOT_TOKEN", "2034149452:AAE_TDxppP1SIvTY2NxQO0UvJ9AYbpimR_4")
     APP_ID = int(config("APP_ID", default=7460290))
     API_HASH = config("API_HASH", default=40f25e810b628be54bcb44a58eb8d69e)
     OWNER_ID = int(config("OWNER_ID", default=1198820588))
