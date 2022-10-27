@@ -5,14 +5,14 @@ from pyrogram import filters
 from pyrogram.errors import RPCError
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, Message
 
-from Alita import LOGGER
+from plugins.Alita import LOGGER
 from pyrogram import Client as Alita
 from database.notes_db import Notes, NotesSettings
-from Alita.utils.cmd_senders import send_cmd
-from Alita.utils.custom_filters import admin_filter, command, owner_filter
-from Alita.utils.kbhelpers import ikb
-from Alita.utils.msg_types import Types, get_note_type
-from Alita.utils.string import (
+from plugins.Alita.utils.cmd_senders import send_cmd
+from plugins.Alita.utils.custom_filters import admin_filter, command, owner_filter
+from plugins.Alita.utils.kbhelpers import ikb
+from plugins.Alita.utils.msg_types import Types, get_note_type
+from plugins.Alita.utils.string import (
     build_keyboard,
     escape_mentions_using_curly_brackets,
     parse_button,
