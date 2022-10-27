@@ -22,8 +22,6 @@ class Greeting (Resource):
     def get(self):
         return "Bypass Bot is Up & Running!"
 
-api.add_resource(Greeting, '/')
-
 class Bot(Client):
 
     def __init__(self):
