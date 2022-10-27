@@ -11,6 +11,8 @@ imdbpy==2021.4.18
 youtube-dl
 youtube_search
 requests
+flask
+flask_restful
 googletrans
 telegraph
 beautifulsoup4
