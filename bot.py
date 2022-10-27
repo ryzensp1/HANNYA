@@ -1,6 +1,7 @@
 import logging
 import logging.config
 
+
 # Get logging configurations
 logging.config.fileConfig('logging.conf')
 logging.getLogger().setLevel(logging.INFO)
@@ -10,6 +11,8 @@ logging.getLogger("imdbpy").setLevel(logging.ERROR)
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 from database.ia_filterdb import Media
+from flask import Flask
+from flask_restful import Resource, Api
 from database.users_chats_db import db
 from info import SESSION, API_ID, API_HASH, BOT_TOKEN, LOG_STR
 from utils import temp
@@ -47,4 +50,4 @@ class Bot(Client):
 
 
 app = Bot()
-app.run()
+app.run(host="0.0.0.0", port=os.environ.get("PORT", 8080))
