@@ -10,17 +10,17 @@ from pyrogram.types import (
     Message,
 )
 
-from Alita import LOGGER, SUPPORT_STAFF
+from plugins.Alita import LOGGER, SUPPORT_STAFF
 from pyrogram import Client as Alita
 from database.rules_db import Rules
 from database.users_db import Users
 from database.warns_db import Warns, WarnSettings
-from Alita.tr_engine import tlang
-from Alita.utils.caching import ADMIN_CACHE, admin_cache_reload
-from Alita.utils.custom_filters import admin_filter, command, restrict_filter
-from Alita.utils.extract_user import extract_user
-from Alita.utils.parser import mention_html
-from Alita.vars import Config
+from plugins.Alita.tr_engine import tlang
+from plugins.Alita.utils.caching import ADMIN_CACHE, admin_cache_reload
+from plugins.Alita.utils.custom_filters import admin_filter, command, restrict_filter
+from plugins.Alita.utils.extract_user import extract_user
+from plugins.Alita.utils.parser import mention_html
+from plugins.Alita.vars import Config
 
 
 @Alita.on_message(
