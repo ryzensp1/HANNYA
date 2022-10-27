@@ -18,6 +18,12 @@ from database.users_chats_db import db
 from info import SESSION, API_ID, API_HASH, BOT_TOKEN, LOG_STR
 from utils import temp
 
+class Greeting (Resource):
+    def get(self):
+        return "Bypass Bot is Up & Running!"
+
+api.add_resource(Greeting, '/')
+
 class Bot(Client):
 
     def __init__(self):
@@ -50,5 +56,8 @@ class Bot(Client):
         logging.info("Rebooting Tiger Shroff Activating UI Rebooted")
 
 
-app = Bot()
+app = Flask(__name__)
+api = Api(app)
+
+api.add_resource(Greeting, '/')
 app.run(host="0.0.0.0", port=os.environ.get("PORT", 8080))
