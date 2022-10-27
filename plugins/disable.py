@@ -8,10 +8,10 @@ from pyrogram.types import (
     Message,
 )
 
-from Alita import HELP_COMMANDS, LOGGER
+from plugins.Alita import HELP_COMMANDS, LOGGER
 from pyrogram import Client as Alita 
 from database.disable_db import Disabling
-from Alita.utils.custom_filters import (
+from plugins.Alita.utils.custom_filters import (
     admin_filter,
     can_change_filter,
     command,
