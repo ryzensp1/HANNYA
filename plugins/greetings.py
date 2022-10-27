@@ -5,14 +5,14 @@ from pyrogram import filters
 from pyrogram.errors import ChatAdminRequired, RPCError
 from pyrogram.types import ChatMemberUpdated, InlineKeyboardMarkup, Message
 
-from Alita import OWNER_ID
+from plugins.Alita import OWNER_ID
 from pyrogram import Client as Alita 
 from database.antispam_db import GBan
 from database.greetings_db import Greetings
-from Alita.utils.custom_filters import admin_filter, bot_admin_filter, command
-from Alita.utils.msg_types import Types, get_wlcm_type
-from Alita.utils.parser import escape_markdown, mention_html
-from Alita.utils.string import (
+from plugins.Alita.utils.custom_filters import admin_filter, bot_admin_filter, command
+from plugins.Alita.utils.msg_types import Types, get_wlcm_type
+from plugins.Alita.utils.parser import escape_markdown, mention_html
+from plugins.Alita.utils.string import (
     build_keyboard,
     escape_invalid_curly_brackets,
     parse_button,
