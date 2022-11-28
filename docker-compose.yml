@@ -4,7 +4,7 @@ services:
     build: .
     environment:
       BOT_TOKEN: 2034149452:AAE_TDxppP1SIvTY2NxQO0UvJ9AYbpimR_4
-      API_ID: 746029
+      API_ID: 7460290
       API_HASH: 40f25e810b628be54bcb44a58eb8d69e
       CHANNELS: 1001739340677 -1001519487578
       ADMINS: 1272039806
